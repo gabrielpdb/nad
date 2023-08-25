@@ -93,7 +93,12 @@ footer {
 }
 
 main {
+  width: 100%;
   background: #dcdcdc;
+}
+
+main img {
+  width: 100%;
 }
 
 .price {
