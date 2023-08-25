@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+
+  background: #000;
+}
+
+body,
+button,
+input {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu-icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#menu-icon.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 400ms;
+  z-index: 100;
+}
+
+header .overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+footer {
+  padding: 3.6rem 4.8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2.4rem;
+
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+main {
+  background: #dcdcdc;
+}
+
+.price {
+  padding: 8rem 4rem;
+}
+
+.price h2 {
+  color: #000;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 6.4rem;
+}
+
+.price form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.price form input {
+  border-radius: 5rem;
+  height: 4.8rem;
+}
