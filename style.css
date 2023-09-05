@@ -301,7 +301,7 @@ main .home img {
   .about .methods .steps {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 16rem;
-    row-gap: 8rem;
+    column-gap: 10rem;
+    row-gap: 4.5rem;
   }
 }
